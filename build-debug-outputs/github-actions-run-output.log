@@ -1,0 +1,945 @@
+Maven Deploy	Set up job	2024-09-29T15:18:52.7262775Z ##[debug]Starting: Set up job
+Maven Deploy	Set up job	2024-09-29T15:18:52.7264609Z Current runner version: '2.319.1'
+Maven Deploy	Set up job	2024-09-29T15:18:52.7272333Z Runner name: 'arc-gridos-simulation-shared-services-runners-mhkz2-runnervwx6p'
+Maven Deploy	Set up job	2024-09-29T15:18:52.7275621Z Runner group name: 'gridos-simulation-runner-group'
+Maven Deploy	Set up job	2024-09-29T15:18:52.7278144Z Machine name: 'ip-10-227-48-44'
+Maven Deploy	Set up job	2024-09-29T15:18:52.7307249Z ##[group]GITHUB_TOKEN Permissions
+Maven Deploy	Set up job	2024-09-29T15:18:52.7310529Z Checks: write
+Maven Deploy	Set up job	2024-09-29T15:18:52.7311483Z Contents: write
+Maven Deploy	Set up job	2024-09-29T15:18:52.7312306Z Metadata: read
+Maven Deploy	Set up job	2024-09-29T15:18:52.7313367Z PullRequests: write
+Maven Deploy	Set up job	2024-09-29T15:18:52.7314317Z ##[endgroup]
+Maven Deploy	Set up job	2024-09-29T15:18:52.7318353Z Secret source: Actions
+Maven Deploy	Set up job	2024-09-29T15:18:52.7320411Z ##[debug]Primary repository: gridos-shared-services/simulation-time-service
+Maven Deploy	Set up job	2024-09-29T15:18:52.7322703Z Prepare workflow directory
+Maven Deploy	Set up job	2024-09-29T15:18:52.7466439Z ##[debug]Creating pipeline directory: '/home/runner/_work/simulation-time-service'
+Maven Deploy	Set up job	2024-09-29T15:18:52.7478031Z ##[debug]Creating workspace directory: '/home/runner/_work/simulation-time-service/simulation-time-service'
+Maven Deploy	Set up job	2024-09-29T15:18:52.7481943Z ##[debug]Update context data
+Maven Deploy	Set up job	2024-09-29T15:18:52.7493674Z ##[debug]Evaluating job-level environment variables
+Maven Deploy	Set up job	2024-09-29T15:18:52.8065945Z ##[debug]Evaluating job container
+Maven Deploy	Set up job	2024-09-29T15:18:52.8070341Z ##[debug]Evaluating job service containers
+Maven Deploy	Set up job	2024-09-29T15:18:52.8073492Z ##[debug]Evaluating job defaults
+Maven Deploy	Set up job	2024-09-29T15:18:52.8175711Z Prepare all required actions
+Maven Deploy	Set up job	2024-09-29T15:18:52.8370810Z Getting action download info
+Maven Deploy	Set up job	2024-09-29T15:18:53.0810594Z Download action repository 'actions/checkout@v4' (SHA:b4ffde65f46336ab88eb53be808477a3936bae11)
+Maven Deploy	Set up job	2024-09-29T15:18:53.3484782Z ##[debug]Download 'https://ourcompany.com/api/v3/repos/actions/checkout/tarball/b4ffde65f46336ab88eb53be808477a3936bae11' to '/home/runner/_work/_actions/_temp_c5543833-142a-4fc5-9332-6b10b80559d5/0429bba0-a374-41da-8244-4c6dd9e20a0e.tar.gz'
+Maven Deploy	Set up job	2024-09-29T15:18:53.4034972Z ##[debug]Unwrap 'actions-checkout-b4ffde6' to '/home/runner/_work/_actions/actions/checkout/v4'
+Maven Deploy	Set up job	2024-09-29T15:18:53.4147682Z ##[debug]Archive '/home/runner/_work/_actions/_temp_c5543833-142a-4fc5-9332-6b10b80559d5/0429bba0-a374-41da-8244-4c6dd9e20a0e.tar.gz' has been unzipped into '/home/runner/_work/_actions/actions/checkout/v4'.
+Maven Deploy	Set up job	2024-09-29T15:18:53.4335779Z ##[debug]action.yml for action: '/home/runner/_work/_actions/actions/checkout/v4/action.yml'.
+Maven Deploy	Set up job	2024-09-29T15:18:53.5880383Z ##[debug]Set step '__actions_checkout' display name to: 'Checkout repo'
+Maven Deploy	Set up job	2024-09-29T15:18:53.5886229Z ##[debug]Set step '__run' display name to: 'Debug'
+Maven Deploy	Set up job	2024-09-29T15:18:53.5890862Z ##[debug]Set step '__run_2' display name to: 'Docker login'
+Maven Deploy	Set up job	2024-09-29T15:18:53.5895350Z ##[debug]Set step '__run_3' display name to: 'Run Garden'
+Maven Deploy	Set up job	2024-09-29T15:18:53.5898110Z Complete job name: Maven Deploy
+Maven Deploy	Set up job	2024-09-29T15:18:53.5945230Z ##[debug]Collect running processes for tracking orphan processes.
+Maven Deploy	Set up job	2024-09-29T15:18:53.6064700Z ##[debug]Finishing: Set up job
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.6320930Z ##[debug]Evaluating condition for step: 'Checkout repo'
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.6378622Z ##[debug]Evaluating: success()
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.6387637Z ##[debug]Evaluating success:
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.6414329Z ##[debug]=> true
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.6422271Z ##[debug]Result: true
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.6465580Z ##[debug]Starting: Checkout repo
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.6910800Z ##[debug]Register post job cleanup for action: actions/checkout@v4
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7155145Z ##[debug]Loading inputs
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7198843Z ##[debug]Evaluating: github.repository
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7200257Z ##[debug]Evaluating Index:
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7211346Z ##[debug]..Evaluating github:
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7212965Z ##[debug]..=> Object
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7227319Z ##[debug]..Evaluating String:
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7228394Z ##[debug]..=> 'repository'
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7232899Z ##[debug]=> 'gridos-shared-services/simulation-time-service'
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7235869Z ##[debug]Result: 'gridos-shared-services/simulation-time-service'
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7241438Z ##[debug]Evaluating: github.token
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7242575Z ##[debug]Evaluating Index:
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7243600Z ##[debug]..Evaluating github:
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7244640Z ##[debug]..=> Object
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7245567Z ##[debug]..Evaluating String:
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7246627Z ##[debug]..=> 'token'
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7247922Z ##[debug]=> '***'
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7248682Z ##[debug]Result: '***'
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7287137Z ##[debug]Loading env
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7421309Z ##[group]Run actions/checkout@v4
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7421956Z with:
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7422389Z   persist-credentials: false
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7423182Z   repository: gridos-shared-services/simulation-time-service
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7424753Z   token: ***
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7425220Z   ssh-strict: true
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7425662Z   clean: true
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7426138Z   sparse-checkout-cone-mode: true
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7426763Z   fetch-depth: 1
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7427204Z   fetch-tags: false
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7427697Z   show-progress: true
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7428174Z   lfs: false
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7428587Z   submodules: false
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7429070Z   set-safe-directory: true
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.7429757Z ##[endgroup]
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.8772474Z ##[debug]GITHUB_WORKSPACE = '/home/runner/_work/simulation-time-service/simulation-time-service'
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.8776587Z ##[debug]qualified repository = 'gridos-shared-services/simulation-time-service'
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.8779187Z ##[debug]ref = 'refs/pull/20/merge'
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.8781342Z ##[debug]commit = '5956576412f7362018ed2b07171c2d143197812f'
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.8783368Z ##[debug]clean = true
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.8785320Z ##[debug]filter = undefined
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.8786924Z ##[debug]fetch depth = 1
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.8788394Z ##[debug]fetch tags = false
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.8790021Z ##[debug]show progress = true
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.8791668Z ##[debug]lfs = false
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.8793213Z ##[debug]submodules = false
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.8794925Z ##[debug]recursive submodules = false
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.8796645Z ##[debug]GitHub Host URL = 
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.8799874Z ::add-matcher::/home/runner/_work/_actions/actions/checkout/v4/dist/problem-matcher.json
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.8958851Z ##[debug]Added matchers: 'checkout-git'. Problem matchers scan action output for known warning or error strings and report these inline.
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.8977613Z Syncing repository: gridos-shared-services/simulation-time-service
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.8980791Z ::group::Getting Git version info
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.8983406Z ##[group]Getting Git version info
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.8985989Z Working directory is '/home/runner/_work/simulation-time-service/simulation-time-service'
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.8991018Z ##[debug]Getting git version
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.8992028Z [command]/usr/bin/git version
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.8993809Z git version 2.46.2
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.8995438Z ##[debug]0
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.8996809Z ##[debug]git version 2.46.2
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.8997670Z ##[debug]
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9000013Z ##[debug]Set git useragent to: git/2.46.2 (github-actions-checkout)
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9002370Z ::endgroup::
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9003174Z ##[endgroup]
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9021534Z ::add-mask::***
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9026748Z Temporarily overriding HOME='/home/runner/_work/_temp/97c7d4cc-9be2-4948-9dbe-6575e7b65ead' before making global git config changes
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9030471Z Adding repository directory to the temporary git global config as a safe directory
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9034236Z [command]/usr/bin/git config --global --add safe.directory /home/runner/_work/simulation-time-service/simulation-time-service
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9037649Z ##[debug]0
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9038978Z ##[debug]
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9040872Z Deleting the contents of '/home/runner/_work/simulation-time-service/simulation-time-service'
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9044070Z ::group::Initializing the repository
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9045924Z ##[group]Initializing the repository
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9048255Z [command]/usr/bin/git init /home/runner/_work/simulation-time-service/simulation-time-service
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9051390Z hint: Using 'master' as the name for the initial branch. This default branch name
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9053935Z hint: is subject to change. To configure the initial branch name to use in all
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9056429Z hint: of your new repositories, which will suppress this warning, call:
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9058060Z hint:
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9058825Z hint: 	git config --global init.defaultBranch <name>
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9059562Z hint:
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9060335Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9061699Z hint: 'development'. The just-created branch can be renamed via this command:
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9062649Z hint:
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9063088Z hint: 	git branch -m <name>
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9064764Z Initialized empty Git repository in /home/runner/_work/simulation-time-service/simulation-time-service/.git/
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9067795Z ##[debug]0
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9070724Z ##[debug]Initialized empty Git repository in /home/runner/_work/simulation-time-service/simulation-time-service/.git/
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9073304Z ##[debug]
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9075761Z [command]/usr/bin/git remote add origin https://ourcompany.com/gridos-shared-services/simulation-time-service
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9079089Z ##[debug]0
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9080399Z ##[debug]
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9082142Z ::endgroup::
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9082892Z ##[endgroup]
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9084375Z ::group::Disabling automatic garbage collection
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9085839Z ##[group]Disabling automatic garbage collection
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9087410Z [command]/usr/bin/git config --local gc.auto 0
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9093609Z ##[debug]0
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9094924Z ##[debug]
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9096125Z ::endgroup::
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9096969Z ##[endgroup]
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9098417Z ::group::Setting up auth
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9099310Z ##[group]Setting up auth
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9102471Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9123320Z ##[debug]1
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9125177Z ##[debug]
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9130425Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9370856Z ##[debug]0
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9376678Z ##[debug]
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9380579Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.build\.ge\.com\/\.extraheader
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9418288Z ##[debug]1
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9420305Z ##[debug]
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9426309Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.build\.ge\.com\/\.extraheader' && git config --local --unset-all 'http.https://ourcompany.com/.extraheader' || :"
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9598886Z ##[debug]0
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9601960Z ##[debug]
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9609534Z [command]/usr/bin/git config --local http.https://ourcompany.com/.extraheader AUTHORIZATION: basic ***
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9633390Z ##[debug]0
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9634508Z ##[debug]
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9652235Z ::endgroup::
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9653006Z ##[endgroup]
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9655037Z ::group::Fetching the repository
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9656134Z ##[group]Fetching the repository
+Maven Deploy	Checkout repo	2024-09-29T15:18:53.9670595Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +5956576412f7362018ed2b07171c2d143197812f:refs/remotes/pull/20/merge
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.1915362Z From https://ourcompany.com/gridos-shared-services/simulation-time-service
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.1986415Z  * [new ref]         5956576412f7362018ed2b07171c2d143197812f -> pull/20/merge
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.1990191Z ##[debug]0
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.1992865Z ##[debug]
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.1995266Z ::endgroup::
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.1995897Z ##[endgroup]
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.1998085Z ::group::Determining the checkout info
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.1999054Z ##[group]Determining the checkout info
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2001313Z ::endgroup::
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2001867Z ##[endgroup]
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2006688Z ::group::Checking out the ref
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2007772Z ##[group]Checking out the ref
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2021392Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/20/merge
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2084168Z Note: switching to 'refs/remotes/pull/20/merge'.
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2085325Z 
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2086890Z You are in 'detached HEAD' state. You can look around, make experimental
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2089379Z changes and commit them, and you can discard any commits you make in this
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2091808Z state without impacting any branches by switching back to a branch.
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2093062Z 
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2094401Z If you want to create a new branch to retain commits you create, you may
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2097498Z do so (now or later) by using -c with the switch command. Example:
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2098446Z 
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2098869Z   git switch -c <new-branch-name>
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2099464Z 
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2099797Z Or undo this operation with:
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2100330Z 
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2100598Z   git switch -
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2100945Z 
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2101702Z Turn off this advice by setting config variable advice.detachedHead to false
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2102915Z 
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2108015Z HEAD is now at 5956576 Merge 4900e29f843dd9cfebd07fc53eedc3c755d6d976 into 445d6005afc22f2cf3975d54cd17427c05cdc9d7
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2136500Z ##[debug]0
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2137490Z ##[debug]
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2138420Z ::endgroup::
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2138978Z ##[endgroup]
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2165090Z ##[debug]0
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2166616Z ##[debug]commit 5956576412f7362018ed2b07171c2d143197812f
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2168999Z ##[debug]Author: FRIZZELL-CARLTON, Russell <russ.frizzell-carlton@ourcompany.com>
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2170366Z ##[debug]Date:   Sun Sep 29 15:18:17 2024 +0000
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2171187Z ##[debug]
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2172371Z ##[debug]    Merge 4900e29f843dd9cfebd07fc53eedc3c755d6d976 into 445d6005afc22f2cf3975d54cd17427c05cdc9d7
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2173887Z ##[debug]
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2175507Z [command]/usr/bin/git log -1 --format='%H'
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2193864Z '5956576412f7362018ed2b07171c2d143197812f'
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2196946Z ##[debug]0
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2198217Z ##[debug]'5956576412f7362018ed2b07171c2d143197812f'
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2199055Z ##[debug]
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2201790Z ::group::Removing auth
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2202513Z ##[group]Removing auth
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2206056Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2227274Z ##[debug]1
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2228583Z ##[debug]
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2231859Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2452305Z ##[debug]0
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2453431Z ##[debug]
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2454767Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.build\.ge\.com\/\.extraheader
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2482260Z http.https://ourcompany.com/.extraheader
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2483590Z ##[debug]0
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2484685Z ##[debug]http.https://ourcompany.com/.extraheader
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2485267Z ##[debug]
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2486368Z [command]/usr/bin/git config --local --unset-all http.https://ourcompany.com/.extraheader
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2505518Z ##[debug]0
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2506942Z ##[debug]
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2513235Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.build\.ge\.com\/\.extraheader' && git config --local --unset-all 'http.https://ourcompany.com/.extraheader' || :"
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2730470Z ##[debug]0
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2731952Z ##[debug]
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2735725Z ::endgroup::
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2736321Z ##[endgroup]
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2737827Z ##[debug]Unsetting HOME override
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2747389Z ::remove-matcher owner=checkout-git::
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2776850Z ##[debug]Removed matchers: 'checkout-git'
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2838462Z ##[debug]Node Action run completed with exit code 0
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2987086Z ##[debug]Save intra-action state isPost = true
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2987875Z ##[debug]Save intra-action state setSafeDirectory = true
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.2989000Z ##[debug]Save intra-action state repositoryPath = /home/runner/_work/simulation-time-service/simulation-time-service
+Maven Deploy	Checkout repo	2024-09-29T15:18:54.3001279Z ##[debug]Finishing: Checkout repo
+Maven Deploy	Debug	2024-09-29T15:18:54.3032594Z ##[debug]Evaluating condition for step: 'Debug'
+Maven Deploy	Debug	2024-09-29T15:18:54.3035804Z ##[debug]Evaluating: success()
+Maven Deploy	Debug	2024-09-29T15:18:54.3036838Z ##[debug]Evaluating success:
+Maven Deploy	Debug	2024-09-29T15:18:54.3038174Z ##[debug]=> true
+Maven Deploy	Debug	2024-09-29T15:18:54.3039085Z ##[debug]Result: true
+Maven Deploy	Debug	2024-09-29T15:18:54.3041193Z ##[debug]Starting: Debug
+Maven Deploy	Debug	2024-09-29T15:18:54.3076757Z ##[debug]Loading inputs
+Maven Deploy	Debug	2024-09-29T15:18:54.3078102Z ##[debug]Loading env
+Maven Deploy	Debug	2024-09-29T15:18:54.3132389Z ##[group]Run echo "pr.yaml run id is $GITHUB_RUN_ID"
+Maven Deploy	Debug	2024-09-29T15:18:54.3133118Z [36;1mecho "pr.yaml run id is $GITHUB_RUN_ID"[0m
+Maven Deploy	Debug	2024-09-29T15:18:54.3155199Z shell: /usr/bin/bash -e {0}
+Maven Deploy	Debug	2024-09-29T15:18:54.3155675Z ##[endgroup]
+Maven Deploy	Debug	2024-09-29T15:18:54.3250756Z ##[debug]/usr/bin/bash -e /home/runner/_work/_temp/4c15a4a5-6a39-4b0f-8ba6-f15222e62f3b.sh
+Maven Deploy	Debug	2024-09-29T15:18:54.3309945Z pr.yaml run id is 222966
+Maven Deploy	Debug	2024-09-29T15:18:54.3325652Z ##[debug]Finishing: Debug
+Maven Deploy	Docker login	2024-09-29T15:18:54.3343344Z ##[debug]Evaluating condition for step: 'Docker login'
+Maven Deploy	Docker login	2024-09-29T15:18:54.3345542Z ##[debug]Evaluating: success()
+Maven Deploy	Docker login	2024-09-29T15:18:54.3346627Z ##[debug]Evaluating success:
+Maven Deploy	Docker login	2024-09-29T15:18:54.3348664Z ##[debug]=> true
+Maven Deploy	Docker login	2024-09-29T15:18:54.3349885Z ##[debug]Result: true
+Maven Deploy	Docker login	2024-09-29T15:18:54.3353324Z ##[debug]Starting: Docker login
+Maven Deploy	Docker login	2024-09-29T15:18:54.3388202Z ##[debug]Loading inputs
+Maven Deploy	Docker login	2024-09-29T15:18:54.3400121Z ##[debug]Evaluating: format('echo {0} | docker login -u {1} --password-stdin dig-grid-artifactory.apps.ourcompany.com
+Maven Deploy	Docker login	2024-09-29T15:18:54.3401594Z ##[debug]', secrets.SIMULATION_GRID_ARTIFACTORY_PWD, secrets.SIMULATION_GRID_ARTIFACTORY_USR)
+Maven Deploy	Docker login	2024-09-29T15:18:54.3402460Z ##[debug]Evaluating format:
+Maven Deploy	Docker login	2024-09-29T15:18:54.3419905Z ##[debug]..Evaluating String:
+Maven Deploy	Docker login	2024-09-29T15:18:54.3420772Z ##[debug]..=> 'echo {0} | docker login -u {1} --password-stdin dig-grid-artifactory.apps.ourcompany.com
+Maven Deploy	Docker login	2024-09-29T15:18:54.3421559Z ##[debug]'
+Maven Deploy	Docker login	2024-09-29T15:18:54.3447618Z ##[debug]..Evaluating Index:
+Maven Deploy	Docker login	2024-09-29T15:18:54.3448141Z ##[debug]....Evaluating secrets:
+Maven Deploy	Docker login	2024-09-29T15:18:54.3448698Z ##[debug]....=> Object
+Maven Deploy	Docker login	2024-09-29T15:18:54.3449124Z ##[debug]....Evaluating String:
+Maven Deploy	Docker login	2024-09-29T15:18:54.3449669Z ##[debug]....=> 'SIMULATION_GRID_ARTIFACTORY_PWD'
+Maven Deploy	Docker login	2024-09-29T15:18:54.3450943Z ##[debug]..=> '***'
+Maven Deploy	Docker login	2024-09-29T15:18:54.3452325Z ##[debug]..Evaluating Index:
+Maven Deploy	Docker login	2024-09-29T15:18:54.3452784Z ##[debug]....Evaluating secrets:
+Maven Deploy	Docker login	2024-09-29T15:18:54.3453255Z ##[debug]....=> Object
+Maven Deploy	Docker login	2024-09-29T15:18:54.3453657Z ##[debug]....Evaluating String:
+Maven Deploy	Docker login	2024-09-29T15:18:54.3454177Z ##[debug]....=> 'SIMULATION_GRID_ARTIFACTORY_USR'
+Maven Deploy	Docker login	2024-09-29T15:18:54.3454790Z ##[debug]..=> '***'
+Maven Deploy	Docker login	2024-09-29T15:18:54.3456210Z ##[debug]=> 'echo *** | docker login -u *** --password-stdin dig-grid-artifactory.apps.ourcompany.com
+Maven Deploy	Docker login	2024-09-29T15:18:54.3456972Z ##[debug]'
+Maven Deploy	Docker login	2024-09-29T15:18:54.3458290Z ##[debug]Result: 'echo *** | docker login -u *** --password-stdin dig-grid-artifactory.apps.ourcompany.com
+Maven Deploy	Docker login	2024-09-29T15:18:54.3459104Z ##[debug]'
+Maven Deploy	Docker login	2024-09-29T15:18:54.3459613Z ##[debug]Loading env
+Maven Deploy	Docker login	2024-09-29T15:18:54.3475583Z ##[group]Run echo *** | docker login -u *** --password-stdin dig-grid-artifactory.apps.ourcompany.com
+Maven Deploy	Docker login	2024-09-29T15:18:54.3479700Z [36;1mecho *** | docker login -u *** --password-stdin dig-grid-artifactory.apps.ourcompany.com[0m
+Maven Deploy	Docker login	2024-09-29T15:18:54.3488879Z shell: /usr/bin/bash -e {0}
+Maven Deploy	Docker login	2024-09-29T15:18:54.3490530Z ##[endgroup]
+Maven Deploy	Docker login	2024-09-29T15:18:54.3512971Z ##[debug]/usr/bin/bash -e /home/runner/_work/_temp/cd97a74e-4bb7-4617-9cac-d5f7940103cd.sh
+Maven Deploy	Docker login	2024-09-29T15:18:54.5031836Z WARNING! Your password will be stored unencrypted in /home/runner/.docker/config.json.
+Maven Deploy	Docker login	2024-09-29T15:18:54.5097196Z Configure a credential helper to remove this warning. See
+Maven Deploy	Docker login	2024-09-29T15:18:54.5102534Z https://docs.docker.com/engine/reference/commandline/login/#credential-stores
+Maven Deploy	Docker login	2024-09-29T15:18:54.5103812Z 
+Maven Deploy	Docker login	2024-09-29T15:18:54.5103963Z Login Succeeded
+Maven Deploy	Docker login	2024-09-29T15:18:54.5111342Z ##[debug]Finishing: Docker login
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5130982Z ##[debug]Evaluating: secrets.SIMULATION_GRID_ARTIFACTORY_USR
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5132783Z ##[debug]Evaluating Index:
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5133614Z ##[debug]..Evaluating secrets:
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5134723Z ##[debug]..=> Object
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5135737Z ##[debug]..Evaluating String:
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5136931Z ##[debug]..=> 'SIMULATION_GRID_ARTIFACTORY_USR'
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5138201Z ##[debug]=> '***'
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5138966Z ##[debug]Result: '***'
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5140155Z ##[debug]Evaluating: secrets.SIMULATION_GRID_ARTIFACTORY_PWD
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5140804Z ##[debug]Evaluating Index:
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5141218Z ##[debug]..Evaluating secrets:
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5141663Z ##[debug]..=> Object
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5142078Z ##[debug]..Evaluating String:
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5142588Z ##[debug]..=> 'SIMULATION_GRID_ARTIFACTORY_PWD'
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5143537Z ##[debug]=> '***'
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5144562Z ##[debug]Result: '***'
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5145338Z ##[debug]Evaluating: github.event.number
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5145908Z ##[debug]Evaluating Index:
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5146351Z ##[debug]..Evaluating Index:
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5146797Z ##[debug]....Evaluating github:
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5147251Z ##[debug]....=> Object
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5147655Z ##[debug]....Evaluating String:
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5148110Z ##[debug]....=> 'event'
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5148519Z ##[debug]..=> Object
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5148912Z ##[debug]..Evaluating String:
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5149342Z ##[debug]..=> 'number'
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5150932Z ##[debug]=> 20
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5151331Z ##[debug]Result: 20
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5166313Z ##[debug]Evaluating condition for step: 'Run Garden'
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5168376Z ##[debug]Evaluating: success()
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5169631Z ##[debug]Evaluating success:
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5171034Z ##[debug]=> true
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5172673Z ##[debug]Result: true
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5174743Z ##[debug]Starting: Run Garden
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5201408Z ##[debug]Loading inputs
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5203117Z ##[debug]Loading env
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5224902Z ##[group]Run garden self-update ; env ; garden run maven-build --env=simulation-time-service-$GITHUB_RUN_ID.ci --log-level=5 --force-refresh ; cat .garden/error.log
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5228267Z [36;1mgarden self-update ; env ; garden run maven-build --env=simulation-time-service-$GITHUB_RUN_ID.ci --log-level=5 --force-refresh ; cat .garden/error.log[0m
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5237172Z shell: /usr/bin/bash -e {0}
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5237904Z env:
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5238844Z   OCI_REPO_USR: ***
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5240507Z   OCI_REPO_PWD: ***
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5241248Z   EVENT_NUM: 20
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5241718Z ##[endgroup]
+Maven Deploy	Run Garden	2024-09-29T15:18:54.5258000Z ##[debug]/usr/bin/bash -e /home/runner/_work/_temp/391ca743-d7cc-4059-8f3c-6215cac46328.sh
+Maven Deploy	Run Garden	2024-09-29T15:18:58.6237642Z Update Garden 
+Maven Deploy	Run Garden	2024-09-29T15:18:58.6238994Z 
+Maven Deploy	Run Garden	2024-09-29T15:18:58.6914288Z No installation directory specified via --install-dir option. Garden will be re-installed to the current installation directory: /usr/local/garden/bin
+Maven Deploy	Run Garden	2024-09-29T15:18:58.6986536Z Checking for target and latest versions...
+Maven Deploy	Run Garden	2024-09-29T15:18:59.2543285Z A new version of Garden has been released (0.13.41).
+Maven Deploy	Run Garden	2024-09-29T15:18:59.2550293Z Please use the "garden self-update" command, re-run the installation script or download the latest version from https://github.com/garden-io/garden/releases.
+Maven Deploy	Run Garden	2024-09-29T15:19:00.2968044Z Current Garden version: 0.13.40
+Maven Deploy	Run Garden	2024-09-29T15:19:00.2993841Z Target Garden version to be installed: 0.13.41
+Maven Deploy	Run Garden	2024-09-29T15:19:00.2995321Z Latest release version: 0.13.41
+Maven Deploy	Run Garden	2024-09-29T15:19:00.3015594Z 
+Maven Deploy	Run Garden	2024-09-29T15:19:00.3017252Z Downloading version 0.13.41 from https://download.garden.io/core/0.13.41/garden-0.13.41-linux-amd64.tar.gz...
+Maven Deploy	Run Garden	2024-09-29T15:19:01.2611774Z Backing up prior installation to /usr/local/garden/bin/.backup/0.13.40...
+Maven Deploy	Run Garden	2024-09-29T15:19:01.4602470Z Extracting to installation directory /usr/local/garden/bin...
+Maven Deploy	Run Garden	2024-09-29T15:19:01.8524415Z 
+Maven Deploy	Run Garden	2024-09-29T15:19:01.8531942Z Done!
+Maven Deploy	Run Garden	2024-09-29T15:19:02.1954067Z KUBERNETES_SERVICE_PORT_HTTPS=443
+Maven Deploy	Run Garden	2024-09-29T15:19:02.1957900Z GITHUB_WORKSPACE=/home/runner/_work/simulation-time-service/simulation-time-service
+Maven Deploy	Run Garden	2024-09-29T15:19:02.1959703Z KUBERNETES_SERVICE_PORT=443
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2017162Z HOSTNAME=ip-10-227-48-44.ec2.internal
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2019080Z GITHUB_PATH=/home/runner/_work/_temp/_runner_file_commands/add_path_e7a26d4a-4f7a-413e-b858-86c6487b6692
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2023125Z GITHUB_ACTION=__run_3
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2024248Z GITHUB_RUN_NUMBER=98
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2025824Z RUNNER_NAME=arc-gridos-simulation-shared-services-runners-mhkz2-runnervwx6p
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2027455Z GITHUB_REPOSITORY_OWNER_ID=128607
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2028278Z EVENT_NUM=20
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2028870Z RUNNER_DEBUG=1
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2029535Z GITHUB_TRIGGERING_ACTOR=212487181
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2030544Z GITHUB_REF_TYPE=branch
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2031369Z ASPNETCORE_URLS=http://+:80
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2033774Z ***
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2034372Z GITHUB_REPOSITORY_ID=431040
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2035168Z GITHUB_ACTIONS=true
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2035968Z GITHUB_SHA=5956576412f7362018ed2b07171c2d143197812f
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2038220Z GITHUB_WORKFLOW_REF=gridos-shared-services/simulation-time-service/.github/workflows/pr.yaml@refs/pull/20/merge
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2040473Z RUNNER_ENVIRONMENT=self-hosted
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2041544Z GITHUB_REF=refs/pull/20/merge
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2042422Z RUNNER_OS=Linux
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2043261Z GITHUB_REF_PROTECTED=false
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2044189Z RUNNER_MANUALLY_TRAP_SIG=1
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2045094Z HOME=/home/runner
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2046074Z GITHUB_API_URL=https://ourcompany.com/api/v3
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2047572Z KUBERNETES_PORT_443_TCP=tcp://172.20.0.1:443
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2049143Z RUNNER_TRACKING_ID=github_e0bb54de-ce1e-400b-b7c8-66b37744beda
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2050482Z RUNNER_ARCH=X64
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2051287Z RUNNER_TEMP=/home/runner/_work/_temp
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2053381Z GITHUB_STATE=/home/runner/_work/_temp/_runner_file_commands/save_state_e7a26d4a-4f7a-413e-b858-86c6487b6692
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2056181Z GITHUB_ENV=/home/runner/_work/_temp/_runner_file_commands/set_env_e7a26d4a-4f7a-413e-b858-86c6487b6692
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2058334Z GITHUB_EVENT_PATH=/home/runner/_work/_temp/_github_workflow/event.json
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2059796Z GITHUB_EVENT_NAME=pull_request
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2061309Z GITHUB_ACTIONS_RUNNER_EXTRA_USER_AGENT=actions-runner-controller/0.9.3
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2062836Z ACTIONS_RUNNER_PRINT_LOG_TO_STDOUT=1
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2065573Z GITHUB_RUN_ID=222966
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2067573Z GITHUB_STEP_SUMMARY=/home/runner/_work/_temp/_runner_file_commands/step_summary_e7a26d4a-4f7a-413e-b858-86c6487b6692
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2069609Z GITHUB_ACTOR=212487181
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2070429Z GITHUB_RUN_ATTEMPT=1
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2071528Z GITHUB_GRAPHQL_URL=https://ourcompany.com/api/graphql
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2072998Z GITHUB_SERVER_URL=https://ourcompany.com
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2074096Z SHLVL=2
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2074893Z KUBERNETES_PORT_443_TCP_PROTO=tcp
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2075859Z GITHUB_ACTOR_ID=26224
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2077440Z OCI_REPO_PWD=***
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2078289Z RUNNER_TOOL_CACHE=/home/runner/_work/_tool
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2079653Z DOTNET_RUNNING_IN_CONTAINER=true
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2080879Z GITHUB_WORKFLOW_SHA=5956576412f7362018ed2b07171c2d143197812f
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2082320Z KUBERNETES_PORT_443_TCP_ADDR=172.20.0.1
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2083362Z GITHUB_REF_NAME=20/merge
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2084336Z GITHUB_JOB=maven-deploy
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2085244Z OCI_REPO_USR=***
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2086080Z DOCKER_HOST=unix:///var/run/docker.sock
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2087940Z GITHUB_REPOSITORY=gridos-shared-services/simulation-time-service
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2089331Z KUBERNETES_SERVICE_HOST=172.20.0.1
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2090378Z KUBERNETES_PORT=tcp://172.20.0.1:443
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2091455Z KUBERNETES_PORT_443_TCP_PORT=443
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2092440Z GITHUB_RETENTION_DAYS=90
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2093919Z RUNNER_WORKSPACE=/home/runner/_work/simulation-time-service
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2095306Z GITHUB_ACTION_REPOSITORY=
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2096507Z PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2097854Z GITHUB_BASE_REF=main
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2098603Z CI=true
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2099278Z ImageOS=ubuntu22
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2100379Z GITHUB_REPOSITORY_OWNER=gridos-shared-services
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2101598Z GITHUB_HEAD_REF=test-garden
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2102475Z GITHUB_ACTION_REF=
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2103299Z GITHUB_WORKFLOW=pr
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2104394Z DEBIAN_FRONTEND=noninteractive
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2106350Z GITHUB_OUTPUT=/home/runner/_work/_temp/_runner_file_commands/set_output_e7a26d4a-4f7a-413e-b858-86c6487b6692
+Maven Deploy	Run Garden	2024-09-29T15:19:02.2108235Z _=/usr/bin/env
+Maven Deploy	Run Garden	2024-09-29T15:19:05.6036811Z [verbose] garden version: 0.13.41
+Maven Deploy	Run Garden	2024-09-29T15:19:05.6221119Z Run 
+Maven Deploy	Run Garden	2024-09-29T15:19:05.6221971Z 
+Maven Deploy	Run Garden	2024-09-29T15:19:05.6244556Z ℹ garden                    → Initializing...
+Maven Deploy	Run Garden	2024-09-29T15:19:05.6446014Z ℹ garden-dashboard          → [debug] Initializing Garden Cloud API client.
+Maven Deploy	Run Garden	2024-09-29T15:19:05.6448387Z [silly] Retrieving client auth token from config store
+Maven Deploy	Run Garden	2024-09-29T15:19:05.6456165Z [debug] No auth token found, proceeding without access to the Garden dashboard. Command results for this command run will not be available in the Garden dashboard.
+Maven Deploy	Run Garden	2024-09-29T15:19:05.6508378Z [silly] Calling git with args 'rev-parse --abbrev-ref HEAD' in /home/runner/_work/simulation-time-service/simulation-time-service
+Maven Deploy	Run Garden	2024-09-29T15:19:05.6650579Z [silly] Calling git with args 'rev-parse HEAD' in /home/runner/_work/simulation-time-service/simulation-time-service
+Maven Deploy	Run Garden	2024-09-29T15:19:05.6703275Z [silly] Calling git with args 'config --get remote.origin.url' in /home/runner/_work/simulation-time-service/simulation-time-service
+Maven Deploy	Run Garden	2024-09-29T15:19:05.6780196Z ℹ garden-dashboard          → You are not logged in. To use the Garden dashboard, log in with the garden login command.
+Maven Deploy	Run Garden	2024-09-29T15:19:05.6784426Z ℹ garden-dashboard          → Learn more at: https://docs.garden.io/using-garden/dashboard
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7105436Z [silly] No OTEL collector configured, setting no-op exporter
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7118182Z [silly] Calling git with args 'rev-parse --show-toplevel' in /home/runner/_work/simulation-time-service/simulation-time-service
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7180476Z 🌿 Log in with garden login to explore logs, past commands, and your dependency graph in the Garden dashboard.
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7184737Z Learn more at: https://docs.garden.io/using-garden/dashboard
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7186154Z 
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7187761Z → Run garden util hide-warning web-app to disable this message.
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7189927Z ℹ garden                    → Running in environment ci.simulation-time-service-222966
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7247182Z [silly] Scanning for configs (force=false)
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7285074Z [silly] Scanning for configs in /home/runner/_work/simulation-time-service/simulation-time-service
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7309727Z [silly] TreeCache: No cached value for key ["git-repo-files","/home/runner/_work/simulation-time-service/simulation-time-service","4218d9d1f18af5105f8ff6dba04a65ee294624b7bb609a8e688ceb6527b980ef"]
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7314651Z [silly] TreeCache: No cached value for key ["git-repo-files","/home/runner/_work/simulation-time-service/simulation-time-service"]
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7318849Z [silly] TreeCache: No cached value for key ["git-repo-files","/home/runner/_work/simulation-time-service/simulation-time-service"]
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7321757Z [silly] Scanning repository at /home/runner/_work/simulation-time-service/simulation-time-service
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7377539Z ℹ git                       → [verbose] Scanning project root at /home/runner/_work/simulation-time-service/simulation-time-service
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7379740Z   → Includes: (none)
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7380683Z   → Excludes: (none)
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7382862Z ℹ git                       → [silly] Calling git with args 'rev-parse --show-toplevel' in /home/runner/_work/simulation-time-service/simulation-time-service
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7415364Z ℹ git                       → [silly] Calling git with args 'diff-index --name-only HEAD /home/runner/_work/simulation-time-service/simulation-time-service' in /home/runner/_work/simulation-time-service/simulation-time-service
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7464471Z ℹ git                       → [silly] Calling git with args '--glob-pathspecs ls-files --ignored --cached --exclude /home/runner/_work/simulation-time-service/simulation-time-service/.garden --exclude **/.garden/**/* --exclude-per-directory .gardenignore' in /home/runner/_work/simulation-time-service/simulation-time-service
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7514379Z ℹ git                       → [silly] Calling git with args '--glob-pathspecs ls-files -s --others --cached --exclude /home/runner/_work/simulation-time-service/simulation-time-service/.garden --exclude **/.garden/**/* --exclude-per-directory .gardenignore' in /home/runner/_work/simulation-time-service/simulation-time-service
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7600958Z ℹ git                       → [verbose] Found 53 files in project root /home/runner/_work/simulation-time-service/simulation-time-service (took 0.03 sec)
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7624176Z [silly] TreeCache: Setting value for key ["git-repo-files","/home/runner/_work/simulation-time-service/simulation-time-service"]
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7628023Z [debug] Found 53 files in path /home/runner/_work/simulation-time-service/simulation-time-service, filtering by 1 include and 6 exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7630965Z [debug] Include globs: **/*garden.y*ml
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7633045Z [debug] Exclude globs: **/.garden/**/*, .garden/**/*, .garden/**/*, .git/**/*, .gitmodules, debug-info*/**
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7635568Z [silly] Checking if helm/garden.yml matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7676976Z [silly] Checking if project.garden.yml matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7687137Z [silly] Checking if src/garden.yml matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7691647Z [debug] Found 3 files in path /home/runner/_work/simulation-time-service/simulation-time-service after glob matching
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7696092Z [silly] TreeCache: Setting value for key ["git-repo-files","/home/runner/_work/simulation-time-service/simulation-time-service","4218d9d1f18af5105f8ff6dba04a65ee294624b7bb609a8e688ceb6527b980ef"]
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7700905Z [silly] Load configs from /home/runner/_work/simulation-time-service/simulation-time-service/helm/garden.yml
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7707659Z [silly] Load configs from /home/runner/_work/simulation-time-service/simulation-time-service/project.garden.yml
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7711193Z [silly] Load configs from /home/runner/_work/simulation-time-service/simulation-time-service/src/garden.yml
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7755799Z [silly] Loaded configs from /home/runner/_work/simulation-time-service/simulation-time-service/helm/garden.yml
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7782112Z [silly] Loaded configs from /home/runner/_work/simulation-time-service/simulation-time-service/project.garden.yml
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7813602Z [silly] Loaded configs from /home/runner/_work/simulation-time-service/simulation-time-service/src/garden.yml
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7881983Z [silly] Adding action config for Run helm-build
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7884090Z [silly] Adding action config for Run maven-build
+Maven Deploy	Run Garden	2024-09-29T15:19:05.7886542Z [debug] Scanned and found 2 actions, 0 workflows and 0 modules
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8047535Z [silly] BufferedEventStream: Connected
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8086600Z [silly] TreeCache: Invalidating caches down from context ["path"]
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8090714Z [silly] Starting command 'run' action
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8111530Z ℹ providers                 → Resolving providers (will force refresh statuses)...
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8132880Z [silly] Loading plugins
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8137255Z [silly] Loading plugin container
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8142341Z [silly] Loading plugin exec
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8149267Z [silly] Loading plugin hadolint
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8154442Z [silly] Loading plugin kubernetes
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8158368Z [silly] Loading plugin local-kubernetes
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8162825Z [silly] Loading plugin ephemeral-kubernetes
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8171461Z [silly] Loading plugin openshift
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8174492Z [silly] Loading plugin octant
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8175736Z [silly] Loading plugin otel-collector
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8179102Z [silly] Loading plugin templated
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8182965Z [silly] Loading plugin conftest
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8186871Z [silly] Loading plugin conftest-container
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8190238Z [silly] Loading plugin conftest-kubernetes
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8193395Z [silly] Loading plugin jib
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8196758Z [silly] Loading plugin terraform
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8200121Z [silly] Loading plugin pulumi
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8227138Z [silly] Loaded plugin ephemeral-kubernetes
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8618903Z [silly] Loaded plugin hadolint
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8735437Z [silly] Loaded plugin octant
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8741623Z [silly] Loaded plugin otel-collector
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8773102Z [silly] Loaded plugin templated
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8814349Z [silly] Loaded plugin conftest
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8827383Z [silly] Loaded plugin conftest-container
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8838109Z [silly] Loaded plugin conftest-kubernetes
+Maven Deploy	Run Garden	2024-09-29T15:19:05.8959051Z [silly] Loaded plugin terraform
+Maven Deploy	Run Garden	2024-09-29T15:19:05.9046954Z [silly] Loaded plugin pulumi
+Maven Deploy	Run Garden	2024-09-29T15:19:05.9313382Z [silly] Loaded plugin jib
+Maven Deploy	Run Garden	2024-09-29T15:19:05.9315191Z [silly] Loaded plugin container
+Maven Deploy	Run Garden	2024-09-29T15:19:06.0334513Z [silly] Loaded plugin kubernetes
+Maven Deploy	Run Garden	2024-09-29T15:19:06.0336376Z [silly] Loaded plugin openshift
+Maven Deploy	Run Garden	2024-09-29T15:19:06.0378765Z [silly] Loaded plugin local-kubernetes
+Maven Deploy	Run Garden	2024-09-29T15:19:06.0560176Z [silly] Loaded plugin exec
+Maven Deploy	Run Garden	2024-09-29T15:19:06.0577336Z [silly] Validating plugin container
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2013720Z [silly] Done loading plugin container
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2015500Z [silly] Validating plugin hadolint
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2017124Z [silly] Done loading plugin hadolint
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2018444Z [silly] Validating plugin jib
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2032310Z [silly] Done loading plugin jib
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2033728Z [silly] Validating plugin kubernetes
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2107319Z [silly] Done loading plugin kubernetes
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2109321Z [silly] Validating plugin local-kubernetes
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2114974Z [silly] Done loading plugin local-kubernetes
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2116714Z [silly] Validating plugin ephemeral-kubernetes
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2122382Z [silly] Done loading plugin ephemeral-kubernetes
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2456949Z [silly] Validating plugin openshift
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2457993Z [silly] Done loading plugin openshift
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2458956Z [silly] Validating plugin octant
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2459774Z [silly] Done loading plugin octant
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2460525Z [silly] Validating plugin exec
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2461247Z [silly] Done loading plugin exec
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2462259Z [silly] Validating plugin otel-collector
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2463313Z [silly] Done loading plugin otel-collector
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2464462Z [silly] Validating plugin templated
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2465409Z [silly] Done loading plugin templated
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2466834Z [silly] Validating plugin conftest
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2467613Z [silly] Done loading plugin conftest
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2468625Z [silly] Validating plugin conftest-container
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2469755Z [silly] Done loading plugin conftest-container
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2470884Z [silly] Validating plugin conftest-kubernetes
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2472157Z [silly] Done loading plugin conftest-kubernetes
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2473176Z [silly] Validating plugin terraform
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2473986Z [silly] Done loading plugin terraform
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2474761Z [silly] Validating plugin pulumi
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2475579Z [silly] Done loading plugin pulumi
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2479094Z [silly] Loaded plugins: container, hadolint, jib, kubernetes, local-kubernetes, ephemeral-kubernetes, openshift, octant, exec, otel-collector, templated, conftest, conftest-container, conftest-kubernetes, terraform, pulumi
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2483241Z ℹ graph-solver              → [silly] Starting batch 2ff59785-e21e-4c36-b67f-9622acd4661b (3 tasks)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2484985Z ℹ graph-solver              → [silly] GraphSolver: start
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2486226Z ℹ graph-solver              → [silly] GraphSolver: loop
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2489006Z ℹ graph-solver              → [silly] Request resolve-provider.exec:request:2ff59785-e21e-4c36-b67f-9622acd4661b is missing its status.
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2491973Z ℹ graph-solver              → [silly] Request resolve-provider.container:request:2ff59785-e21e-4c36-b67f-9622acd4661b is missing its status.
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2495097Z ℹ graph-solver              → [silly] Request resolve-provider.templated:request:2ff59785-e21e-4c36-b67f-9622acd4661b is missing its status.
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2497646Z ℹ graph-solver              → [silly] Task nodes in progress (0): (none)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2499397Z ℹ graph-solver              → [silly] Processing node resolve-provider.exec:status
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2501125Z ℹ providers                 → [silly] Executing node resolve-provider.exec:status
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2502940Z ℹ graph-solver              → [silly] Processing node resolve-provider.container:status
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2505162Z ℹ providers                 → [silly] Executing node resolve-provider.container:status
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2507055Z ℹ graph-solver              → [silly] Processing node resolve-provider.templated:status
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2508860Z ℹ providers                 → [silly] Executing node resolve-provider.templated:status
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2511184Z ℹ providers                 → [silly] Completing node resolve-provider.exec:status. aborted=false, error=null
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2513534Z ℹ providers                 → [silly] Completing node resolve-provider.container:status. aborted=false, error=null
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2516036Z ℹ providers                 → [silly] Completing node resolve-provider.templated:status. aborted=false, error=null
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2517905Z ℹ graph-solver              → [silly] GraphSolver: loop
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2524156Z ℹ graph-solver              → [silly] Request resolve-provider.exec:request:2ff59785-e21e-4c36-b67f-9622acd4661b should be processed. Status: [{"type":"1","description":"2","key":"3","name":"4","aborted":false,"startedAt":"5","completedAt":"6","error":null,"inputVersion":"7","processed":false,"success":true,"attached":false},"resolve-provider","resolve provider exec","resolve-provider.exec","exec","2024-09-29T15:19:06.243Z","2024-09-29T15:19:06.246Z","0.13.41"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2535215Z ℹ graph-solver              → [silly] Request resolve-provider.container:request:2ff59785-e21e-4c36-b67f-9622acd4661b should be processed. Status: [{"type":"1","description":"2","key":"3","name":"4","aborted":false,"startedAt":"5","completedAt":"6","error":null,"inputVersion":"7","processed":false,"success":true,"attached":false},"resolve-provider","resolve provider container","resolve-provider.container","container","2024-09-29T15:19:06.244Z","2024-09-29T15:19:06.246Z","0.13.41"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2546059Z ℹ graph-solver              → [silly] Request resolve-provider.templated:request:2ff59785-e21e-4c36-b67f-9622acd4661b should be processed. Status: [{"type":"1","description":"2","key":"3","name":"4","aborted":false,"startedAt":"5","completedAt":"6","error":null,"inputVersion":"7","processed":false,"success":true,"attached":false},"resolve-provider","resolve provider templated","resolve-provider.templated","templated","2024-09-29T15:19:06.244Z","2024-09-29T15:19:06.247Z","0.13.41"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2552279Z ℹ graph-solver              → [silly] Task nodes in progress (0): (none)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2553929Z ℹ graph-solver              → [silly] Processing node resolve-provider.exec:process
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2555675Z ℹ providers                 → [silly] Executing node resolve-provider.exec:process
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2557595Z ℹ providers                 → [silly] Resolving template strings for provider exec
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2559011Z ℹ exec                      → Configuring provider...
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2560322Z ℹ providers                 → [silly] Validating exec config
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2574231Z ℹ providers                 → [silly] Calling configureProvider on exec
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2579047Z ℹ graph-solver              → [silly] Processing node resolve-provider.container:process
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2581582Z ℹ providers                 → [silly] Executing node resolve-provider.container:process
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2599258Z ℹ providers                 → [silly] Resolving template strings for provider container
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2600962Z ℹ container                 → [debug] Configuring provider...
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2602439Z ℹ providers                 → [silly] Validating container config
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2605191Z ℹ providers                 → [silly] Calling configureProvider on container
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2612121Z ℹ graph-solver              → [silly] Processing node resolve-provider.templated:process
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2614139Z ℹ providers                 → [silly] Executing node resolve-provider.templated:process
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2620339Z ℹ providers                 → [silly] Resolving template strings for provider templated
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2623318Z ℹ templated                 → [debug] Configuring provider...
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2628139Z ℹ providers                 → [silly] Validating templated config
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2637889Z ℹ providers                 → [silly] Calling configureProvider on templated
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2639525Z ℹ graph-solver              → [silly] GraphSolver: loop
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2649032Z ℹ graph-solver              → [silly] Request resolve-provider.exec:request:2ff59785-e21e-4c36-b67f-9622acd4661b should be processed. Status: [{"type":"1","description":"2","key":"3","name":"4","aborted":false,"startedAt":"5","completedAt":"6","error":null,"inputVersion":"7","processed":false,"success":true,"attached":false},"resolve-provider","resolve provider exec","resolve-provider.exec","exec","2024-09-29T15:19:06.243Z","2024-09-29T15:19:06.246Z","0.13.41"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2660332Z ℹ graph-solver              → [silly] Request resolve-provider.container:request:2ff59785-e21e-4c36-b67f-9622acd4661b should be processed. Status: [{"type":"1","description":"2","key":"3","name":"4","aborted":false,"startedAt":"5","completedAt":"6","error":null,"inputVersion":"7","processed":false,"success":true,"attached":false},"resolve-provider","resolve provider container","resolve-provider.container","container","2024-09-29T15:19:06.244Z","2024-09-29T15:19:06.246Z","0.13.41"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2672190Z ℹ graph-solver              → [silly] Request resolve-provider.templated:request:2ff59785-e21e-4c36-b67f-9622acd4661b should be processed. Status: [{"type":"1","description":"2","key":"3","name":"4","aborted":false,"startedAt":"5","completedAt":"6","error":null,"inputVersion":"7","processed":false,"success":true,"attached":false},"resolve-provider","resolve provider templated","resolve-provider.templated","templated","2024-09-29T15:19:06.244Z","2024-09-29T15:19:06.247Z","0.13.41"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2680163Z ℹ graph-solver              → [silly] Task nodes in progress (3): processing resolve provider exec, processing resolve provider container, processing resolve provider templated
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2685423Z ℹ graph-solver              → [silly] GraphSolver: loop
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2687529Z ℹ graph-solver              → [silly] GraphSolver: loop
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2694143Z ℹ graph-solver              → [silly] Request resolve-provider.exec:request:2ff59785-e21e-4c36-b67f-9622acd4661b should be processed. Status: [{"type":"1","description":"2","key":"3","name":"4","aborted":false,"startedAt":"5","completedAt":"6","error":null,"inputVersion":"7","processed":false,"success":true,"attached":false},"resolve-provider","resolve provider exec","resolve-provider.exec","exec","2024-09-29T15:19:06.243Z","2024-09-29T15:19:06.246Z","0.13.41"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2705804Z ℹ graph-solver              → [silly] Request resolve-provider.container:request:2ff59785-e21e-4c36-b67f-9622acd4661b should be processed. Status: [{"type":"1","description":"2","key":"3","name":"4","aborted":false,"startedAt":"5","completedAt":"6","error":null,"inputVersion":"7","processed":false,"success":true,"attached":false},"resolve-provider","resolve provider container","resolve-provider.container","container","2024-09-29T15:19:06.244Z","2024-09-29T15:19:06.246Z","0.13.41"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2716411Z ℹ graph-solver              → [silly] Request resolve-provider.templated:request:2ff59785-e21e-4c36-b67f-9622acd4661b should be processed. Status: [{"type":"1","description":"2","key":"3","name":"4","aborted":false,"startedAt":"5","completedAt":"6","error":null,"inputVersion":"7","processed":false,"success":true,"attached":false},"resolve-provider","resolve provider templated","resolve-provider.templated","templated","2024-09-29T15:19:06.244Z","2024-09-29T15:19:06.247Z","0.13.41"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2723477Z ℹ graph-solver              → [silly] Task nodes in progress (3): processing resolve provider exec, processing resolve provider container, processing resolve provider templated
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2726352Z ℹ graph-solver              → [silly] GraphSolver: loop
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2734402Z [silly] Registering Build type exec
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2738558Z [silly] Registering Build type container
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2744383Z [silly] Registering Deploy type exec
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2747682Z [silly] Registering Deploy type container
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2753762Z [silly] Registering Run type exec
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2756483Z [silly] Registering Run type container
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2761247Z [silly] Registering Test type exec
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2763803Z [silly] Registering Test type container
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2770223Z [silly] Creating ActionRouter with 3 configured providers
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2775349Z [silly] Registering Build type exec
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2781081Z [silly] Registering Build type container
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2782137Z [silly] Registering Deploy type exec
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2786621Z [silly] Registering Deploy type container
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2790075Z [silly] Registering Run type exec
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2792788Z [silly] Registering Run type container
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2796180Z [silly] Registering Test type exec
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2798632Z [silly] Registering Test type container
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2801750Z [silly] Creating ActionRouter with 3 configured providers
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2806984Z [silly] Registering Build type exec
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2809513Z [silly] Registering Build type container
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2813083Z [silly] Registering Deploy type exec
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2819647Z [silly] Registering Deploy type container
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2820713Z [silly] Registering Run type exec
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2824643Z [silly] Registering Run type container
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2829156Z [silly] Registering Test type exec
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2833288Z [silly] Registering Test type container
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2837446Z [silly] Creating ActionRouter with 3 configured providers
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2885117Z [silly] Calling 'configureProvider' handler on 'exec'
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2894688Z [silly] Calling 'configureProvider' handler on 'container'
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2899946Z [silly] Calling 'configureProvider' handler on 'templated'
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2906342Z [silly] Returned default 'configureProvider' handler for 'exec'
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2911101Z [silly] Returned default 'configureProvider' handler for 'container'
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2915592Z [silly] Returned default 'configureProvider' handler for 'templated'
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2921849Z [silly] Called 'configureProvider' handler on 'exec'
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2926189Z [silly] Called 'configureProvider' handler on 'container'
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2930596Z [silly] Called 'configureProvider' handler on 'templated'
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2938918Z ℹ providers                 → [silly] Validating exec config returned from configureProvider handler
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2946610Z ℹ providers                 → [silly] Ensuring exec provider is ready
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2952771Z ✔ exec                      → Provider configured
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2961207Z ℹ providers                 → [silly] Validating container config returned from configureProvider handler
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2972805Z ℹ providers                 → [silly] Ensuring container provider is ready
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2977598Z ✔ container                 → [debug] Provider configured
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2986841Z ℹ providers                 → [silly] Validating templated config returned from configureProvider handler
+Maven Deploy	Run Garden	2024-09-29T15:19:06.2997701Z ℹ providers                 → [silly] Ensuring templated provider is ready
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3002569Z ✔ templated                 → [debug] Provider configured
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3020501Z ℹ providers                 → [silly] Checking provider status cache for exec at /home/runner/_work/simulation-time-service/simulation-time-service/.garden/cache/provider-statuses/exec.json
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3028355Z ℹ providers                 → [silly] Checking provider status cache for container at /home/runner/_work/simulation-time-service/simulation-time-service/.garden/cache/provider-statuses/container.json
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3036045Z ℹ providers                 → [silly] Checking provider status cache for templated at /home/runner/_work/simulation-time-service/simulation-time-service/.garden/cache/provider-statuses/templated.json
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3039506Z [silly] Found 'getEnvironmentStatus' handler on 'exec'
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3041562Z [silly] Returned default 'getEnvironmentStatus' handler for 'container'
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3046377Z [silly] Returned default 'getEnvironmentStatus' handler for 'templated'
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3048605Z ✔ container                 → [debug] Provider ready
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3054456Z ℹ providers                 → [silly] Caching provider status for container at /home/runner/_work/simulation-time-service/simulation-time-service/.garden/cache/provider-statuses/container.json
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3058005Z ✔ templated                 → [debug] Provider ready
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3064578Z ℹ providers                 → [silly] Caching provider status for templated at /home/runner/_work/simulation-time-service/simulation-time-service/.garden/cache/provider-statuses/templated.json
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3067656Z ✔ exec                      → Provider ready
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3070724Z ℹ providers                 → [silly] Caching provider status for exec at /home/runner/_work/simulation-time-service/simulation-time-service/.garden/cache/provider-statuses/exec.json
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3210007Z ℹ providers                 → [verbose] resolve provider container is ready.
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3219814Z ℹ providers                 → [silly] Completing node resolve-provider.container:process. aborted=false, error=null
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3225211Z ℹ graph-solver              → [silly] GraphSolver: loop
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3234998Z ℹ graph-solver              → [silly] Request resolve-provider.exec:request:2ff59785-e21e-4c36-b67f-9622acd4661b should be processed. Status: [{"type":"1","description":"2","key":"3","name":"4","aborted":false,"startedAt":"5","completedAt":"6","error":null,"inputVersion":"7","processed":false,"success":true,"attached":false},"resolve-provider","resolve provider exec","resolve-provider.exec","exec","2024-09-29T15:19:06.243Z","2024-09-29T15:19:06.246Z","0.13.41"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3242959Z ℹ graph-solver              → [silly] Request resolve-provider.container:request:2ff59785-e21e-4c36-b67f-9622acd4661b has been processed.
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3246639Z ℹ providers                 → [silly] Completing node resolve-provider.container:request:2ff59785-e21e-4c36-b67f-9622acd4661b. aborted=false, error=null
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3251861Z ℹ graph-solver              → [silly] Complete handler for batch 2ff59785-e21e-4c36-b67f-9622acd4661b called with result resolve-provider.container
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3267771Z ℹ graph-solver              → [silly] Complete handler for batch 2ff59785-e21e-4c36-b67f-9622acd4661b matched with request resolve-provider.container:request:2ff59785-e21e-4c36-b67f-9622acd4661b
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3272523Z ℹ graph-solver              → [silly] Batch 2ff59785-e21e-4c36-b67f-9622acd4661b has 2 result(s) still missing: resolve-provider.exec, resolve-provider.templated
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3281660Z ℹ graph-solver              → [silly] Request resolve-provider.templated:request:2ff59785-e21e-4c36-b67f-9622acd4661b should be processed. Status: [{"type":"1","description":"2","key":"3","name":"4","aborted":false,"startedAt":"5","completedAt":"6","error":null,"inputVersion":"7","processed":false,"success":true,"attached":false},"resolve-provider","resolve provider templated","resolve-provider.templated","templated","2024-09-29T15:19:06.244Z","2024-09-29T15:19:06.247Z","0.13.41"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3289478Z ℹ graph-solver              → [silly] Task nodes in progress (2): processing resolve provider exec, processing resolve provider templated
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3291787Z ℹ graph-solver              → [silly] GraphSolver: loop
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3293250Z ℹ providers                 → [verbose] resolve provider templated is ready.
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3296109Z ℹ providers                 → [silly] Completing node resolve-provider.templated:process. aborted=false, error=null
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3297962Z ℹ graph-solver              → [silly] GraphSolver: loop
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3305213Z ℹ graph-solver              → [silly] Request resolve-provider.exec:request:2ff59785-e21e-4c36-b67f-9622acd4661b should be processed. Status: [{"type":"1","description":"2","key":"3","name":"4","aborted":false,"startedAt":"5","completedAt":"6","error":null,"inputVersion":"7","processed":false,"success":true,"attached":false},"resolve-provider","resolve provider exec","resolve-provider.exec","exec","2024-09-29T15:19:06.243Z","2024-09-29T15:19:06.246Z","0.13.41"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3312211Z ℹ graph-solver              → [silly] Request resolve-provider.templated:request:2ff59785-e21e-4c36-b67f-9622acd4661b has been processed.
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3363096Z ℹ providers                 → [silly] Completing node resolve-provider.templated:request:2ff59785-e21e-4c36-b67f-9622acd4661b. aborted=false, error=null
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3376838Z ℹ graph-solver              → [silly] Complete handler for batch 2ff59785-e21e-4c36-b67f-9622acd4661b called with result resolve-provider.templated
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3381110Z ℹ graph-solver              → [silly] Complete handler for batch 2ff59785-e21e-4c36-b67f-9622acd4661b matched with request resolve-provider.templated:request:2ff59785-e21e-4c36-b67f-9622acd4661b
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3389739Z ℹ graph-solver              → [silly] Batch 2ff59785-e21e-4c36-b67f-9622acd4661b has 1 result(s) still missing: resolve-provider.exec
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3392532Z ℹ graph-solver              → [silly] Task nodes in progress (1): processing resolve provider exec
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3394263Z ℹ graph-solver              → [silly] GraphSolver: loop
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3395797Z ℹ providers                 → [verbose] resolve provider exec is ready.
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3397707Z ℹ providers                 → [silly] Completing node resolve-provider.exec:process. aborted=false, error=null
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3399832Z ℹ graph-solver              → [silly] GraphSolver: loop
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3402297Z ℹ graph-solver              → [silly] Request resolve-provider.exec:request:2ff59785-e21e-4c36-b67f-9622acd4661b has been processed.
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3405552Z ℹ providers                 → [silly] Completing node resolve-provider.exec:request:2ff59785-e21e-4c36-b67f-9622acd4661b. aborted=false, error=null
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3409206Z ℹ graph-solver              → [silly] Complete handler for batch 2ff59785-e21e-4c36-b67f-9622acd4661b called with result resolve-provider.exec
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3413213Z ℹ graph-solver              → [silly] Complete handler for batch 2ff59785-e21e-4c36-b67f-9622acd4661b matched with request resolve-provider.exec:request:2ff59785-e21e-4c36-b67f-9622acd4661b
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3418735Z ℹ graph-solver              → [silly] Batch 2ff59785-e21e-4c36-b67f-9622acd4661b completed
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3420833Z ℹ graph-solver              → [silly] Task nodes in progress (0): (none)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3422293Z ✔ providers                 → Finished resolving providers (took 0.5 sec)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3424144Z ℹ providers                 → [silly] Resolved providers: exec, container, templated
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3425929Z ℹ graph                     → Resolving actions and modules...
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3634702Z [silly] No configure handler found for container Run type. Using default handler.
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3682146Z [silly] No configure handler found for container Run type. Using default handler.
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3738404Z ℹ graph                     → [silly] Calling git with args 'rev-parse --show-toplevel' in /home/runner/_work/simulation-time-service/simulation-time-service/helm
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3788127Z ℹ graph                     → [silly] Calling git with args 'rev-parse --show-toplevel' in /home/runner/_work/simulation-time-service/simulation-time-service/src
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3857441Z ℹ graph                     → [silly] TreeCache: No cached value for key ["source","/home/runner/_work/simulation-time-service/simulation-time-service/helm"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3861723Z ℹ graph                     → [silly] TreeCache: No cached value for key ["source","/home/runner/_work/simulation-time-service/simulation-time-service/helm"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3865648Z ℹ graph                     → [silly] TreeCache: No cached value for key ["source","/home/runner/_work/simulation-time-service/simulation-time-service/src"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3869492Z ℹ graph                     → [silly] TreeCache: No cached value for key ["source","/home/runner/_work/simulation-time-service/simulation-time-service/src"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3877558Z ℹ graph                     → [silly] TreeCache: No cached value for key ["git-repo-files","/home/runner/_work/simulation-time-service/simulation-time-service/helm","80c2f921f66e7c76968590f5ec8ddee91268a89b84566c04ed7456df12fb7298"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3883083Z ℹ graph                     → [silly] TreeCache: No cached value for key ["git-repo-files","/home/runner/_work/simulation-time-service/simulation-time-service"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3886914Z ℹ graph                     → [silly] TreeCache: No cached value for key ["git-repo-files","/home/runner/_work/simulation-time-service/simulation-time-service"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3890167Z ℹ graph                     → [silly] Scanning repository at /home/runner/_work/simulation-time-service/simulation-time-service
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3894269Z ℹ git                       → [verbose] Scanning Run action helm-build root at /home/runner/_work/simulation-time-service/simulation-time-service
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3896158Z   → Includes: (none)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3896874Z   → Excludes: (none)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3900879Z ℹ graph                     → [silly] TreeCache: No cached value for key ["git-repo-files","/home/runner/_work/simulation-time-service/simulation-time-service/src","80c2f921f66e7c76968590f5ec8ddee91268a89b84566c04ed7456df12fb7298"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3906129Z ℹ graph                     → [silly] TreeCache: No cached value for key ["git-repo-files","/home/runner/_work/simulation-time-service/simulation-time-service"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3910976Z ℹ git                       → [silly] Calling git with args 'diff-index --name-only HEAD /home/runner/_work/simulation-time-service/simulation-time-service' in /home/runner/_work/simulation-time-service/simulation-time-service
+Maven Deploy	Run Garden	2024-09-29T15:19:06.3961538Z ℹ git                       → [silly] Calling git with args '--glob-pathspecs ls-files --ignored --cached --exclude /home/runner/_work/simulation-time-service/simulation-time-service/.garden --exclude **/.garden/**/* --exclude-per-directory .gardenignore' in /home/runner/_work/simulation-time-service/simulation-time-service
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4003798Z ℹ git                       → [silly] Calling git with args '--glob-pathspecs ls-files -s --others --cached --exclude /home/runner/_work/simulation-time-service/simulation-time-service/.garden --exclude **/.garden/**/* --exclude-per-directory .gardenignore' in /home/runner/_work/simulation-time-service/simulation-time-service
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4053869Z ℹ git                       → [verbose] Found 53 files in Run action helm-build root /home/runner/_work/simulation-time-service/simulation-time-service (took 0.02 sec)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4070100Z ℹ graph                     → [silly] TreeCache: Setting value for key ["git-repo-files","/home/runner/_work/simulation-time-service/simulation-time-service"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4073813Z ℹ graph                     → [silly] TreeCache: Found cached value for key ["git-repo-files","/home/runner/_work/simulation-time-service/simulation-time-service"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4077433Z ℹ graph                     → [silly] Found cached repository match at /home/runner/_work/simulation-time-service/simulation-time-service
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4084166Z ℹ graph                     → [debug] Found 17 files in path /home/runner/_work/simulation-time-service/simulation-time-service/helm, filtering by 1 include and 1 exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4086992Z ℹ graph                     → [debug] Include globs: **/*
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4089605Z ℹ graph                     → [debug] Exclude globs: **/.garden/**/*
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4091652Z ℹ graph                     → [silly] Checking if garden.yml matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4093761Z ℹ graph                     → [silly] Checking if simulation-time-service/Chart.yaml matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4097307Z ℹ graph                     → [silly] Checking if simulation-time-service/templates/NOTES.txt matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4099978Z ℹ graph                     → [silly] Checking if simulation-time-service/templates/_helpers.tpl matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4102791Z ℹ graph                     → [silly] Checking if simulation-time-service/templates/apisixroute.yaml matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4107124Z ℹ graph                     → [silly] Checking if simulation-time-service/templates/authorizationpolicy.yaml matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4110139Z ℹ graph                     → [silly] Checking if simulation-time-service/templates/deployment.yaml matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4112966Z ℹ graph                     → [silly] Checking if simulation-time-service/templates/gatewayroute.yaml matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4133110Z ℹ graph                     → [silly] Checking if simulation-time-service/templates/kafkauser.yaml matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4137413Z ℹ graph                     → [silly] Checking if simulation-time-service/templates/peerAuthentication.yaml matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4140668Z ℹ graph                     → [silly] Checking if simulation-time-service/templates/requestauthentication.yaml matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4144288Z ℹ graph                     → [silly] Checking if simulation-time-service/templates/secretmanager-kafka-cluster-ca.yaml matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4147890Z ℹ graph                     → [silly] Checking if simulation-time-service/templates/secretmanager-kafkauser.yaml matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4150894Z ℹ graph                     → [silly] Checking if simulation-time-service/templates/service.yaml matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4153765Z ℹ graph                     → [silly] Checking if simulation-time-service/templates/serviceaccount.yaml matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4163813Z ℹ graph                     → [silly] Checking if simulation-time-service/templates/servicemonitor.yaml matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4166785Z ℹ graph                     → [silly] Checking if simulation-time-service/values.yaml matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4170048Z ℹ graph                     → [debug] Found 17 files in path /home/runner/_work/simulation-time-service/simulation-time-service/helm after glob matching
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4177569Z ℹ graph                     → [silly] TreeCache: Setting value for key ["git-repo-files","/home/runner/_work/simulation-time-service/simulation-time-service/helm","80c2f921f66e7c76968590f5ec8ddee91268a89b84566c04ed7456df12fb7298"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4181823Z ℹ graph                     → [silly] TreeCache: Setting value for key ["source","/home/runner/_work/simulation-time-service/simulation-time-service/helm"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4188428Z ℹ graph                     → [debug] Found 23 files in path /home/runner/_work/simulation-time-service/simulation-time-service/src, filtering by 1 include and 1 exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4191023Z ℹ graph                     → [debug] Include globs: **/*
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4192461Z ℹ graph                     → [debug] Exclude globs: **/.garden/**/*
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4197894Z ℹ graph                     → [silly] Checking if garden.yml matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4200703Z ℹ graph                     → [silly] Checking if main/java/com/gridos/simulation/time/SimulationTimeChangeListener.java matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4205617Z ℹ graph                     → [silly] Checking if main/java/com/gridos/simulation/time/SimulationTimeService.java matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4209430Z ℹ graph                     → [silly] Checking if main/java/com/gridos/simulation/time/SimulationTimeTtlScheduler.java matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4213288Z ℹ graph                     → [silly] Checking if main/java/com/gridos/simulation/time/kafka/SimulationTimeUpdateEventProducer.java matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4216941Z ℹ graph                     → [silly] Checking if main/java/com/gridos/simulation/time/rest/SimulatedTime.java matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4220247Z ℹ graph                     → [silly] Checking if main/java/com/gridos/simulation/time/rest/SimulatedTimeStatus.java matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4224295Z ℹ graph                     → [silly] Checking if main/java/com/gridos/simulation/time/rest/SimulationTimeController.java matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4228164Z ℹ graph                     → [silly] Checking if main/java/com/gridos/simulation/time/rest/SimulationTimeInfoContributor.java matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4236256Z ℹ graph                     → [silly] Checking if main/java/com/gridos/simulation/time/rest/SimulationTimeSupplier.java matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4239735Z ℹ graph                     → [silly] Checking if main/java/com/gridos/simulation/time/version/GitInfo.java matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4243635Z ℹ graph                     → [silly] Checking if main/java/com/gridos/simulation/time/version/VersionController.java matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4287691Z ℹ graph                     → [silly] Checking if main/java/com/gridos/simulation/time/version/VersionInfo.java matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4290817Z ℹ graph                     → [silly] Checking if main/resources/application.yaml matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4293195Z ℹ graph                     → [silly] Checking if main/resources/logback.xml matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4296054Z ℹ graph                     → [silly] Checking if test/java/com/gridos/simulation/time/SimulationTimeServiceTest.java matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4302158Z ℹ graph                     → [silly] Checking if test/java/com/gridos/simulation/time/SimulationTimeTtlSchedulerTest.java matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4306443Z ℹ graph                     → [silly] Checking if test/java/com/gridos/simulation/time/events/SimulationEventTestUtil.java matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4315993Z ℹ graph                     → [silly] Checking if test/java/com/gridos/simulation/time/kafka/SimulationTimeUpdateEventProducerTest.java matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4320245Z ℹ graph                     → [silly] Checking if test/java/com/gridos/simulation/time/rest/SimulationTimeInfoContributorTest.java matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4338560Z ℹ graph                     → [silly] Checking if test/java/com/gridos/simulation/time/version/VersionControllerTest.java matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4341520Z ℹ graph                     → [silly] Checking if test/resources/logback-test.xml matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4344236Z ℹ graph                     → [silly] Checking if test/resources/testcontainers.properties matches include/exclude globs
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4348001Z ℹ graph                     → [debug] Found 23 files in path /home/runner/_work/simulation-time-service/simulation-time-service/src after glob matching
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4352544Z ℹ graph                     → [silly] TreeCache: Setting value for key ["git-repo-files","/home/runner/_work/simulation-time-service/simulation-time-service/src","80c2f921f66e7c76968590f5ec8ddee91268a89b84566c04ed7456df12fb7298"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4356766Z ℹ graph                     → [silly] TreeCache: Setting value for key ["source","/home/runner/_work/simulation-time-service/simulation-time-service/src"]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4359027Z ✔ graph                     → Finished resolving graph (took 0.1 sec)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4360514Z ℹ garden                    → Finished initializing Garden (took 0.8 sec)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4361703Z 
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4362794Z ℹ graph-solver              → [silly] Starting batch adad236d-91db-4fb3-8a41-5d9c7836b6dd (1 tasks)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4368468Z ℹ graph-solver              → [silly] GraphSolver: start
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4369845Z ℹ graph-solver              → [silly] GraphSolver: loop
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4372023Z ℹ graph-solver              → [silly] Request run.maven-build:request:adad236d-91db-4fb3-8a41-5d9c7836b6dd is missing its status.
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4374239Z ℹ graph-solver              → [silly] Task nodes in progress (0): (none)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4376066Z ℹ graph-solver              → [silly] Processing node resolve-action.run.maven-build:status
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4378265Z ℹ run.maven-build           → [silly] Executing node resolve-action.run.maven-build:status
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4380682Z ℹ run.maven-build           → [silly] Completing node resolve-action.run.maven-build:status. aborted=false, error=null
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4382629Z ℹ graph-solver              → [silly] GraphSolver: loop
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4390402Z ℹ graph-solver              → [silly] Request run.maven-build:request:adad236d-91db-4fb3-8a41-5d9c7836b6dd is missing its status.
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4396048Z ℹ graph-solver              → [silly] Task nodes in progress (0): (none)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4398008Z ℹ graph-solver              → [silly] Processing node resolve-action.run.maven-build:process
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4399688Z ℹ run.maven-build           → [silly] Executing node resolve-action.run.maven-build:process
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4459488Z ℹ run.maven-build           → [silly] Getting 'getOutputs' handler for Run type=container name=maven-build
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4461667Z [silly] No getOutputs handler found for container Run type. Using default handler.
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4472663Z ℹ run.maven-build           → [silly] Calling getOutputs handler for action Run type=container name=maven-build
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4476863Z ℹ run.maven-build           → [silly] Getting 'validate' handler for Run type=container name=maven-build
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4491167Z ℹ run.maven-build           → [silly] Calling validate handler for action Run type=container name=maven-build
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4507036Z ℹ run.maven-build           → [debug] resolve Run type=container name=maven-build is ready.
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4510962Z ℹ run.maven-build           → [silly] Completing node resolve-action.run.maven-build:process. aborted=false, error=null
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4514052Z ℹ graph-solver              → [silly] GraphSolver: loop
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4518036Z ℹ graph-solver              → [silly] Request run.maven-build:request:adad236d-91db-4fb3-8a41-5d9c7836b6dd is missing its status.
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4520257Z ℹ graph-solver              → [silly] Task nodes in progress (0): (none)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4521930Z ℹ graph-solver              → [silly] Processing node run.maven-build:status
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4524249Z ℹ run.maven-build           → [silly] Executing node run.maven-build:status
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4526367Z ℹ run.maven-build           → Getting status for Run maven-build (type container) at version v-db68efb792...
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4533185Z ℹ run.maven-build           → [silly] Getting 'getResult' handler for Run type=container name=maven-build
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4535826Z [silly] No getResult handler found for container Run type. Using default handler.
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4545547Z ℹ run.maven-build           → [silly] Calling getResult handler for action Run type=container name=maven-build
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4553595Z ℹ run.maven-build           → Status is not ready, maven-build will be run
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4559720Z ℹ run.maven-build           → [silly] Completing node run.maven-build:status. aborted=false, error=null
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4563288Z ℹ graph-solver              → [silly] GraphSolver: loop
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4572834Z ℹ graph-solver              → [silly] Request run.maven-build:request:adad236d-91db-4fb3-8a41-5d9c7836b6dd should be processed. Status: [{"type":"1","description":"2","key":"3","name":"4","aborted":false,"startedAt":"5","completedAt":"6","error":null,"inputVersion":"7","outputs":"8","processed":false,"success":true,"attached":false},"run","Run type=container name=maven-build","run.maven-build","maven-build","2024-09-29T15:19:06.451Z","2024-09-29T15:19:06.455Z","v-db68efb792",{}]
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4579020Z ℹ graph-solver              → [silly] Task nodes in progress (0): (none)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4582550Z ℹ graph-solver              → [silly] Processing node run.maven-build:process
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4584625Z ℹ run.maven-build           → [silly] Executing node run.maven-build:process
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4590271Z ℹ run.maven-build           → Running maven-build (type container) at version v-db68efb792...
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4614549Z ℹ run.maven-build           → [silly] Getting 'run' handler for Run type=container name=maven-build
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4792132Z ✖ run.maven-build           → Failed (took 0 sec)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4818023Z ℹ run.maven-build           → [silly] Completing node run.maven-build:process. aborted=false, error=No 'run' handler configured for Run type 'container' in environment 'ci'. Are you missing a provider configuration?
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4826284Z ℹ run.maven-build           → [silly] Completing node run.maven-build:request:adad236d-91db-4fb3-8a41-5d9c7836b6dd. aborted=false, error=Run type=container name=maven-build failed: Error: No 'run' handler configured for Run type 'container' in environment 'ci'. Are you missing a provider configuration?
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4831861Z ℹ graph-solver              → [silly] Complete handler for batch adad236d-91db-4fb3-8a41-5d9c7836b6dd called with result run.maven-build
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4835663Z ℹ graph-solver              → [silly] Complete handler for batch adad236d-91db-4fb3-8a41-5d9c7836b6dd matched with request run.maven-build:request:adad236d-91db-4fb3-8a41-5d9c7836b6dd
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4839403Z ℹ graph-solver              → [silly] Batch adad236d-91db-4fb3-8a41-5d9c7836b6dd failed: Failed to complete 1/1 tasks:
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4843915Z  ↳ Run type=container name=maven-build: Run type=container name=maven-build failed: Error: No 'run' handler configured for Run type 'container' in environment 'ci'. Are you missing a provider configuration?
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4855269Z ✖ run.maven-build           → Failed processing Run type=container name=maven-build (took 0.05 sec). This is what happened:
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4856775Z 
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4858234Z ────────────────────────────────────────────────────────────────────────────────────────────────────
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4860542Z No 'run' handler configured for Run type 'container' in environment 'ci'. Are you missing a provider configuration?
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4862865Z ────────────────────────────────────────────────────────────────────────────────────────────────────
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4865651Z ℹ run.maven-build           → [silly] Full error with stack trace and wrapped errors:
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4871720Z ────────────────────────────────────────────────────────────────────────────────────────────────────
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4874217Z Error: No 'run' handler configured for Run type 'container' in environment 'ci'. Are you missing a provider configuration?
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4877144Z     at Router.getHandler (file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:798267:23)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4880326Z     at Router.callHandler (file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:798111:30)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4883097Z     at run (file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:799077:41)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4885189Z     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4887979Z     at async RunTask.process (file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:364720:28)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4890834Z     at async descriptor.value (file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:362354:29)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4893432Z     at async file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:364015:30
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4896134Z     at async ProcessTaskNode.execute (file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:800896:35)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4899153Z     at async GraphSolver.processNode (file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:801261:35)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4901219Z Error type: parameter
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4902961Z ────────────────────────────────────────────────────────────────────────────────────────────────────
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4904689Z ℹ graph-solver              → [silly] GraphSolver: loop
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4906061Z ℹ graph-solver              → [silly] Task nodes in progress (0): (none)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4908151Z [silly] Completed command 'run' action successfully
+Maven Deploy	Run Garden	2024-09-29T15:19:06.4909225Z [debug] Done flushing all events and log entries.
+Maven Deploy	Run Garden	2024-09-29T15:19:06.5414926Z [debug] Watcher: Initializing
+Maven Deploy	Run Garden	2024-09-29T15:19:06.5419638Z [debug] Watcher: Starting FSWatcher
+Maven Deploy	Run Garden	2024-09-29T15:19:06.6606809Z [silly] Tracking Run Command event.
+Maven Deploy	Run Garden	2024-09-29T15:19:06.6608265Z Payload:
+Maven Deploy	Run Garden	2024-09-29T15:19:06.6619121Z   {"anonymousId":"ci-user","event":"Run Command","properties":{"projectId":"c81516d6f092f587c76fecc209727e8be3ea4e555c1754e7aeea9d4b3f99ed97f0ba9aa78f341ca10e56759de9a7a3b1de6ebc6475f7262d6c5b082c2d9ad35c","projectIdV2":"whispering-fumbling-task_c81516d6f092f587c76fecc209727e8b","projectName":"5a7fd2f04d94d816e58c87edeaea3a06cce28bae54520ef1db8cc78c1e0bdacdd18f473b0f1fe8ed891d80b6a605ad94f5f2eee7ac53fa3c04d902bb9bfb6cf4","projectNameV2":"perfect-mixed-pull_5a7fd2f04d94d816e58c87edeaea3a06","enterpriseDomain":"2769c2abae62151b2ebb8658628f7c5f5d0dc0c29fdefdd19a23dec9cb0a7b96d74d82512d1f6906bef65b24a29d84685dfd2fd66964a56fbdaff39fabd69206","enterpriseDomainV2":"ratty-willing-science_2769c2abae62151b2ebb8658628f7c5f","isLoggedIn":false,"ciName":"GitHub Actions","system":{"platform":"linux","platformVersion":"5.10.220-209.869.amzn2.x86_64","gardenVersion":"0.13.41"},"isCI":true,"sessionId":"9ba6c884-dfe7-4fdc-bc86-487831c9dcf7","parentSessionId":"9ba6c884-dfe7-4fdc-bc86-487831c9dcf7","projectMetadata":{"modulesCount":0,"moduleTypes":[],"tasksCount":0,"servicesCount":0,"testsCount":0,"actionsCount":2,"buildActionCount":0,"testActionCount":0,"deployActionCount":0,"runActionCount":2},"firstRunAt":"2024-09-29T15:18:58.672Z","latestRunAt":"2024-09-29T15:19:05.788Z","isRecurringUser":false,"name":"run"}}
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8590461Z [silly] Tracking Command Result event.
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8591301Z Payload:
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8611582Z   {"anonymousId":"ci-user","event":"Command Result","properties":{"projectId":"c81516d6f092f587c76fecc209727e8be3ea4e555c1754e7aeea9d4b3f99ed97f0ba9aa78f341ca10e56759de9a7a3b1de6ebc6475f7262d6c5b082c2d9ad35c","projectIdV2":"whispering-fumbling-task_c81516d6f092f587c76fecc209727e8b","projectName":"5a7fd2f04d94d816e58c87edeaea3a06cce28bae54520ef1db8cc78c1e0bdacdd18f473b0f1fe8ed891d80b6a605ad94f5f2eee7ac53fa3c04d902bb9bfb6cf4","projectNameV2":"perfect-mixed-pull_5a7fd2f04d94d816e58c87edeaea3a06","enterpriseDomain":"2769c2abae62151b2ebb8658628f7c5f5d0dc0c29fdefdd19a23dec9cb0a7b96d74d82512d1f6906bef65b24a29d84685dfd2fd66964a56fbdaff39fabd69206","enterpriseDomainV2":"ratty-willing-science_2769c2abae62151b2ebb8658628f7c5f","isLoggedIn":false,"ciName":"GitHub Actions","system":{"platform":"linux","platformVersion":"5.10.220-209.869.amzn2.x86_64","gardenVersion":"0.13.41"},"isCI":true,"sessionId":"9ba6c884-dfe7-4fdc-bc86-487831c9dcf7","parentSessionId":"9ba6c884-dfe7-4fdc-bc86-487831c9dcf7","projectMetadata":{"modulesCount":0,"moduleTypes":[],"tasksCount":0,"servicesCount":0,"testsCount":0,"actionsCount":2,"buildActionCount":0,"testActionCount":0,"deployActionCount":0,"runActionCount":2},"firstRunAt":"2024-09-29T15:18:58.672Z","latestRunAt":"2024-09-29T15:19:05.788Z","isRecurringUser":false,"errors":["runtime"],"lastError":{"error":{"errorType":"runtime","stackTrace":{"functionName":"handleProcessResults","lineNumber":361735}},"wrapped":{"errorType":"graph","taskType":"run","stackTrace":{"functionName":"ProcessTaskNode.complete","lineNumber":800769}},"leaf":{"errorType":"parameter","stackTrace":{"functionName":"Router.getHandler","lineNumber":798267}}},"result":"failure","name":"run","durationMsec":685}}
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8628687Z 1 requested run action(s) failed!
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8629589Z [silly] Error: 1 requested run action(s) failed!
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8631315Z     at handleProcessResults (file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:361735:23)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8633157Z     at RunCommand.action (file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:823557:16)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8634869Z     at async file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:361215:30
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8636457Z     at async file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:361003:20
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8638036Z     at async file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:840626:26
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8639616Z     at async file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:840801:33
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8641469Z     at async file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:361003:20
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8643171Z     at async GardenCli.run (file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:840799:32)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8644856Z     at async file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:840959:29
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8646419Z     at async file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:361003:20
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8647702Z Error type: runtime
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8648294Z Wrapped errors:
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8650015Z ⮑  Error: Run type=container name=maven-build failed: Error: No 'run' handler configured for Run type 'container' in environment 'ci'. Are you missing a provider configuration?
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8652285Z         at ProcessTaskNode.complete (file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:800769:32)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8654228Z         at GraphSolver.completeTask (file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:801336:29)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8656127Z         at GraphSolver.processNode (file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:801265:18)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8657335Z     Error type: graph
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8658049Z     Wrapped errors:
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8659333Z     ⮑  Error: No 'run' handler configured for Run type 'container' in environment 'ci'. Are you missing a provider configuration?
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8661198Z             at Router.getHandler (file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:798267:23)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8663032Z             at Router.callHandler (file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:798111:30)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8664930Z             at run (file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:799077:41)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8666349Z             at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8668004Z             at async RunTask.process (file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:364720:28)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8669893Z             at async descriptor.value (file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:362354:29)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8671629Z             at async file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:364015:30
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8673439Z             at async ProcessTaskNode.execute (file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:800896:35)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8675420Z             at async GraphSolver.processNode (file:///home/runner/.local/share/garden/1727623142-fWcnP9X.r/rollup/garden.mjs:801261:35)
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8676672Z         Error type: parameter
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8677077Z 
+Maven Deploy	Run Garden	2024-09-29T15:19:06.8677400Z See .garden/error.log for detailed error message
+Maven Deploy	Run Garden	2024-09-29T15:19:06.9439850Z ##[error]Process completed with exit code 1.
+Maven Deploy	Run Garden	2024-09-29T15:19:06.9455290Z ##[debug]Finishing: Run Garden
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:06.9494318Z ##[debug]Evaluating condition for step: 'Post Checkout repo'
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:06.9498623Z ##[debug]Evaluating: always()
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:06.9499643Z ##[debug]Evaluating always:
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:06.9501277Z ##[debug]=> true
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:06.9502375Z ##[debug]Result: true
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:06.9504152Z ##[debug]Starting: Post Checkout repo
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:06.9637364Z ##[debug]Loading inputs
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:06.9640998Z ##[debug]Evaluating: github.repository
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:06.9642967Z ##[debug]Evaluating Index:
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:06.9644213Z ##[debug]..Evaluating github:
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:06.9645589Z ##[debug]..=> Object
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:06.9646873Z ##[debug]..Evaluating String:
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:06.9648554Z ##[debug]..=> 'repository'
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:06.9650269Z ##[debug]=> 'gridos-shared-services/simulation-time-service'
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:06.9652874Z ##[debug]Result: 'gridos-shared-services/simulation-time-service'
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:06.9660867Z ##[debug]Evaluating: github.token
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:06.9662303Z ##[debug]Evaluating Index:
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:06.9663683Z ##[debug]..Evaluating github:
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:06.9665003Z ##[debug]..=> Object
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:06.9666300Z ##[debug]..Evaluating String:
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:06.9667507Z ##[debug]..=> 'token'
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:06.9669694Z ##[debug]=> '***'
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:06.9671291Z ##[debug]Result: '***'
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:06.9711253Z ##[debug]Loading env
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:06.9732708Z Post job cleanup.
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.0736938Z ##[debug]Getting git version
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.0750790Z [command]/usr/bin/git version
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.0791667Z git version 2.46.2
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.0818739Z ##[debug]0
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.0820623Z ##[debug]git version 2.46.2
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.0821283Z ##[debug]
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.0823330Z ##[debug]Set git useragent to: git/2.46.2 (github-actions-checkout)
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.0827844Z ::add-mask::***
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.0850638Z Temporarily overriding HOME='/home/runner/_work/_temp/643d19e6-baf7-462e-8c33-01066d560174' before making global git config changes
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.0853835Z Adding repository directory to the temporary git global config as a safe directory
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.0858244Z [command]/usr/bin/git config --global --add safe.directory /home/runner/_work/simulation-time-service/simulation-time-service
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.0892364Z ##[debug]0
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.0893589Z ##[debug]
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.0894975Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.0922845Z ##[debug]1
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.0924085Z ##[debug]
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.0926868Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.1126845Z ##[debug]0
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.1128444Z ##[debug]
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.1130402Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.build\.ge\.com\/\.extraheader
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.1159617Z ##[debug]1
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.1160901Z ##[debug]
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.1164573Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.build\.ge\.com\/\.extraheader' && git config --local --unset-all 'http.https://ourcompany.com/.extraheader' || :"
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.1362257Z ##[debug]0
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.1364245Z ##[debug]
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.1364866Z ##[debug]Unsetting HOME override
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.1417129Z ##[debug]Node Action run completed with exit code 0
+Maven Deploy	Post Checkout repo	2024-09-29T15:19:07.1420416Z ##[debug]Finishing: Post Checkout repo
+Maven Deploy	Complete job	2024-09-29T15:19:07.1634215Z ##[debug]Starting: Complete job
+Maven Deploy	Complete job	2024-09-29T15:19:07.1638313Z Uploading runner diagnostic logs
+Maven Deploy	Complete job	2024-09-29T15:19:07.1705435Z ##[debug]Starting diagnostic file upload.
+Maven Deploy	Complete job	2024-09-29T15:19:07.1706044Z ##[debug]Setting up diagnostic log folders.
+Maven Deploy	Complete job	2024-09-29T15:19:07.1710708Z ##[debug]Creating diagnostic log files folder.
+Maven Deploy	Complete job	2024-09-29T15:19:07.1734313Z ##[debug]Copying 1 worker diagnostic logs.
+Maven Deploy	Complete job	2024-09-29T15:19:07.1754614Z ##[debug]Copying 1 runner diagnostic logs.
+Maven Deploy	Complete job	2024-09-29T15:19:07.1756149Z ##[debug]Zipping diagnostic files.
+Maven Deploy	Complete job	2024-09-29T15:19:07.1822340Z ##[debug]Uploading diagnostic metadata file.
+Maven Deploy	Complete job	2024-09-29T15:19:07.1850587Z ##[debug]Diagnostic file upload complete.
+Maven Deploy	Complete job	2024-09-29T15:19:07.1851742Z Completed runner diagnostic log upload
+Maven Deploy	Complete job	2024-09-29T15:19:07.1853014Z Cleaning up orphan processes
+Maven Deploy	Complete job	2024-09-29T15:19:07.1872866Z ##[debug]Finishing: Complete job
