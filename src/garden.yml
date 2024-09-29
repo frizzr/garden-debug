@@ -1,0 +1,41 @@
+kind: Run
+name: maven-build
+type: container
+variables:
+  envVars:
+    OCI_REPO_USR: ${local.env.OCI_REPO_USR}?
+    OCI_REPO_PWD: ${local.env.OCI_REPO_PWD}?
+    EVENT_NUM: ${local.env.EVENT_NUM}?
+  mavenBuildArgs:
+    - mvn
+    - -f
+    - /repo/pom.xml
+    - clean
+    - deploy
+    - -U
+    - --batch-mode
+    - --no-transfer-progress
+    - -Dmaven.deploy.skip=true
+    - -DrepositoryId=ARTIFACTORY-RELEASE
+    - -Ddocker.username=${var.envVars.OCI_REPO_USR}
+    - -Ddocker.password=${var.envVars.OCI_REPO_PWD}
+    - -DartifactoryUsr=${var.envVars.OCI_REPO_USR}
+    - -DartifactoryPsw=${var.envVars.OCI_REPO_PWD}
+  prMavenBuildArgs:
+    - -Ddocker.tag=PR-${local.env.EVENT_NUM}
+    - -Ddocker.image.prefix=gridos-shared-services-docker-snapshot
+spec:
+  image: "dig-grid-artifactory.apps.ge.com/bsf-docker/bsf/maven-builder:3.1.0-jdk-17"
+  env: ${var.envVars}
+  volumes:
+    - name: vol1
+      hostPath: ./..
+      containerPath: /repo
+    - name: vol2
+      hostPath: /var/run/docker.sock
+      containerPath: /var/run/docker.sock
+  args:
+    $if: ${var.envVars.EVENT_NUM != ""}
+    $then: ${var.mavenBuildArgs + var.prMavenBuildArgs}
+    $else: ${var.mavenBuildArgs}
+

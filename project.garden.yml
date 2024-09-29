@@ -1,0 +1,14 @@
+apiVersion: garden.io/v1
+kind: Project
+name: simulation-time-service
+defaultEnvironment: ci
+variables:
+  ci-env-name: simulation-time-service-${local.env.GITHUB_RUN_ID}
+environments:
+  - name: ci
+    defaultNamespace: ${var.ci-env-name}
+providers:
+  - name: exec
+    environments: ["ci"]
+  - name: container
+    environments: ["ci"]

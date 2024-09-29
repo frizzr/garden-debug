@@ -1,0 +1,25 @@
+kind: Run
+name: helm-build
+type: container
+variables:
+  envVars:
+    OCI_REPO_USR: ${local.env.OCI_REPO_USR}?
+    OCI_REPO_PWD: ${local.env.OCI_REPO_PWD}?
+    EVENT_NUM: ${local.env.EVENT_NUM}?
+  chartsDir: .
+  chartTag: ""
+  helmRepo: ""
+spec:
+  image: "dig-grid-artifactory.apps.ge.com/foundation-docker/helm-publisher:1.2.6"
+  env:
+    ARTIFACTORY_USR: ${var.envVars.OCI_REPO_USR}
+    ARTIFACTORY_PSW: ${var.envVars.OCI_REPO_PWD}
+    CHART_TAG: ${var.chartTag}
+    HELM_REPO: ${var.helmRepo}
+  volumes:
+    - name: vol1
+      hostPath: ${var.chartsDir}
+      containerPath: /helm/charts
+  args:
+    - --rm
+

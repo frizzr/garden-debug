@@ -1,0 +1,34 @@
+name: pr-helm
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: read
+
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  helm-publish:
+    runs-on: arc-gridos-simulation-shared-services-runners
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+    - name: Debug
+      run: |
+        echo "pr-helm.yaml run id is $GITHUB_RUN_ID"
+    - name: Docker login
+      run: |
+        echo ${{ secrets.SIMULATION_GRID_ARTIFACTORY_PWD }} | docker login -u ${{ secrets.SIMULATION_GRID_ARTIFACTORY_USR }} --password-stdin dig-grid-artifactory.apps.ge.com
+    - name: Setup and run Garden
+      env:
+        OCI_REPO_USR: ${{ secrets.SIMULATION_GRID_ARTIFACTORY_USR }}
+        OCI_REPO_PWD: ${{ secrets.SIMULATION_GRID_ARTIFACTORY_PWD }}
+        EVENT_NUM: ${{ github.event.number }}
+      run: >
+        garden run helm-build --log-level 4 --var chartsDir='.' --var chartTag="PR-${{ github.event.number }}" --var helmRepo='https://dig-grid-artifactory.apps.ge.com/artifactory/gridos-shared-services-helm-snapshot'

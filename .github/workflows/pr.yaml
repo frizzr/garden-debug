@@ -1,0 +1,45 @@
+name: pr
+
+on:
+  pull_request:
+    branches:
+    - main
+    paths:
+    - .github/workflows/pr.yaml
+    - 'pom.xml'
+    - 'Dockerfile'
+    - 'src/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  checks: write
+  pull-requests: write
+
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  maven-deploy:
+    name: Maven Deploy
+    runs-on: arc-gridos-simulation-shared-services-runners
+    continue-on-error: true
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+    - name: Debug
+      run: |
+        echo "pr.yaml run id is $GITHUB_RUN_ID"
+    - name: Docker login
+      run: |
+        echo ${{ secrets.SIMULATION_GRID_ARTIFACTORY_PWD }} | docker login -u ${{ secrets.SIMULATION_GRID_ARTIFACTORY_USR }} --password-stdin dig-grid-artifactory.apps.ge.com
+    - name: Run Garden
+      env:
+        OCI_REPO_USR: ${{ secrets.SIMULATION_GRID_ARTIFACTORY_USR }}
+        OCI_REPO_PWD: ${{ secrets.SIMULATION_GRID_ARTIFACTORY_PWD }}
+        EVENT_NUM: ${{ github.event.number }}
+      run: >
+        garden self-update ; env ; garden run maven-build --env=simulation-time-service-$GITHUB_RUN_ID.ci --log-level=5 --force-refresh ; cat .garden/error.log
